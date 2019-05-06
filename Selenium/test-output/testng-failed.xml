@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="exampletest1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Kmslearn.Selenium.Test1">
+        <methods>
+          <include name="Setbrowers"/>
+          <include name="SearchTest"/>
+          <include name="QuitDriver"/>
+        </methods>
+      </class> <!-- com.Kmslearn.Selenium.Test1 -->
+      <class name="com.Kmslearn.Selenium.Test2">
+        <methods>
+          <include name="Setbrowers"/>
+          <include name="QuitDriver"/>
+          <include name="Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Kmslearn.Selenium.Test2 -->
+      <class name="com.Kmslearn.Selenium.Test3">
+        <methods>
+          <include name="Setbrowers"/>
+          <include name="CheckNote" invocation-numbers="0"/>
+          <include name="QuitDriver"/>
+        </methods>
+      </class> <!-- com.Kmslearn.Selenium.Test3 -->
+    </classes>
+  </test> <!-- exampletest1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
